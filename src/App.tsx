@@ -13,9 +13,6 @@ function App() {
   return (
     <div className="App page">
       <ApolloProvider client={client}>
-        {currentTab === "home" && (
-          <Home onTabChange={handleTabChange} />
-        )}
         {currentTab === "play" && (
           <Play onBack={() => handleTabChange("home")} onOver={handleTabChange} />
         )}
