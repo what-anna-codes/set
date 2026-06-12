@@ -11,10 +11,18 @@ function App() {
   const { currentTab, resultId, handleTabChange } = useTabs();
 
   return (
-    <div className="App page">
+    <div
+      className="App page"
+      style={{
+        backgroundColor: "rgba(235, 222, 234, 0.7)",
+        backgroundImage: `${process.env.PUBLIC_URL}/images/bg.jpg`,
+      }}>
       <ApolloProvider client={client}>
         {currentTab === "play" && (
-          <Play onBack={() => handleTabChange("home")} onOver={handleTabChange} />
+          <Play
+            onBack={() => handleTabChange("home")}
+            onOver={handleTabChange}
+          />
         )}
         {currentTab === "rules" && (
           <Rules onBack={() => handleTabChange("home")} />
@@ -22,7 +30,9 @@ function App() {
         {currentTab === "results" && (
           <Results onTabChange={handleTabChange} resultId={resultId} />
         )}
-        {!["play", "rules", "results"].includes(currentTab) && <Home onTabChange={handleTabChange} />}
+        {!["play", "rules", "results"].includes(currentTab) && (
+          <Home onTabChange={handleTabChange} />
+        )}
       </ApolloProvider>
     </div>
   );
