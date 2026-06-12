@@ -25,6 +25,7 @@ function App() {
         {currentTab === "results" && (
           <Results onTabChange={handleTabChange} resultId={resultId} />
         )}
+        {!["play", "rules", "results"].includes(currentTab) && <Home onTabChange={handleTabChange} />}
       </ApolloProvider>
     </div>
   );
