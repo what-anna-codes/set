@@ -1,8 +1,0 @@
-query Results {
-  results(first: 30, orderBy: seconds_ASC) {
-    id
-    username
-    seconds
-    createdAt
-  }
-}

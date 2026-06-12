@@ -1,8 +1,0 @@
-query Result($id: ID!) {
-  result(where: { id: $id }) {
-    id
-    username
-    createdAt
-    seconds
-  }
-}
