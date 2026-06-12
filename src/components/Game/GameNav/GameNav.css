@@ -1,0 +1,12 @@
+.GameNav {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.AddCardsButton {
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+}

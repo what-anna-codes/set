@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Caprasimo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sen:wght@400..800&family=Yeseva+One&display=swap");
+
+.CardButton {
+  width: 100%;
+  min-height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 100%;
+  text-align: center;
+  font-family: "Yeseva One";
+  font-family: "Montserrat";
+  filter: saturate(90%) sepia(40%) brightness(130%);
+  font-weight: 800;
+  text-decoration: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 0.04rem;
+  @media screen and (max-width: 900px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.4rem;
+  }
+}
+.CardButton {
+  background-color: var(--main);
+
+  &:hover {
+    filter: saturate(110%) sepia(60%) brightness(150%);
+  }
+}
+
+.PlayAgainCard {
+  width: 6rem;
+}

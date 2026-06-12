@@ -1,0 +1,32 @@
+.Card {
+  border-radius: 0.5rem;
+  height: 100%;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  transition: all 0.3s ease;
+  background-color: #eaeaea;
+  filter: brightness(106%);
+  border-color: var(--black600);
+  padding: 1rem 1.5rem;
+}
+
+.backface {
+  filter: grayscale(90%) brightness(90%);
+  opacity: 0.6;
+}
+
+.active {
+  background: var(--active);
+}
+
+.accepted {
+  background: var(--accepted);
+}
+
+.rejected {
+  background: var(--rejected);
+}

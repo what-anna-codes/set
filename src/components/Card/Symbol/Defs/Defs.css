@@ -1,0 +1,11 @@
+.shaded.red {
+  fill: url(#pattern-red);
+}
+
+.shaded.green {
+  fill: url(#pattern-green);
+}
+
+.shaded.purple {
+  fill: url(#pattern-purple);
+}
