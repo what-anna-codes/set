@@ -13,10 +13,8 @@ function App() {
   return (
     <div className="App page">
       <ApolloProvider client={client}>
-        {currentTab === "home" && (
           <Home onTabChange={handleTabChange} />
-        )}
-        {currentTab === "play" && (
+        {/* {currentTab === "play" && (
           <Play onBack={() => handleTabChange("home")} onOver={handleTabChange} />
         )}
         {currentTab === "rules" && (
@@ -24,7 +22,7 @@ function App() {
         )}
         {currentTab === "results" && (
           <Results onTabChange={handleTabChange} resultId={resultId} />
-        )}
+        )} */}
       </ApolloProvider>
     </div>
   );

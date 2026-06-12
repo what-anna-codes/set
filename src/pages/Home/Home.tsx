@@ -2,7 +2,7 @@ import { JSX } from "react";
 
 import { sampleCardIds } from "../../utils/deck";
 import Card from "../../components/Card/Card";
- 
+
 import { CardColors } from "../../ts/types";
 import "../Play/Play.css";
 import CardLink from "../../components/ui/CardLink/CardLink";
